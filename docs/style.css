@@ -414,3 +414,11 @@ body {
     order: -1;
   }
 }
+
+/* Safety: hide any leftover AI citation artifacts */
+a[href^="sediment://"],
+span[class*="citation"],
+span[class*="oai"],
+.oai_citation {
+  display: none !important;
+}
